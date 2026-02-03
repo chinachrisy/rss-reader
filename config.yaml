@@ -334,4 +334,4 @@ notify:
 schedule:
   interval_minutes: 15  # 每15分钟检查一次
   max_articles_per_run: 10  # 每次最多处理10篇
-  max_age_hours: 8  # 只处理最近N小时内的文章（避免初次运行推送大量旧文章）
+  max_age_hours: 24  # 只处理最近24小时内的文章
