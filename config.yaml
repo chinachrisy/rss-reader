@@ -7,9 +7,9 @@ feeds:
   - name: "人人都是产品经理"
     url: "https://plink.anyfeeder.com/woshipm/popular"
     category: "market"
-  - name: "虎嗅网"
-    url: "https://www.huxiu.com/rss/0.xml"
-    category: "market"
+  # - name: "虎嗅网"
+  #   url: "https://www.huxiu.com/rss/0.xml"
+  #   category: "market"
 
 # LLM 配置
 llm:
