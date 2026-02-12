@@ -18,7 +18,7 @@ llm:
   # OpenAI 配置（当 provider 为 openai 时使用）
   openai_api_key: "sk-b677b1d83e6b4befb9ceb98fbef5a832"
   openai_api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
-  openai_model: "Qwen-Max"
+  openai_model: "qwen-max"
 
   # 摘要 prompt (Smart Brevity 风格)
   summary_prompt: |
