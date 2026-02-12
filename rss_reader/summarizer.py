@@ -12,6 +12,7 @@ class Summarizer:
         self.model = config.get('model', 'claude-sonnet-4-20250514')
         self.api_key = config.get('api_key')
         self.openai_api_key = config.get('openai_api_key')
+        self.openai_api_base = config.get('openai_api_base', 'https://api.openai.com/v1')
         self.openai_model = config.get('openai_model', 'gpt-4o-mini')
         self.prompt_template = config.get('summary_prompt', self._default_prompt())
 
@@ -35,7 +36,7 @@ class Summarizer:
         """获取 OpenAI 客户端"""
         if self._client is None:
             import openai
-            self._client = openai.OpenAI(api_key=self.openai_api_key)
+            self._client = openai.OpenAI(api_key=self.openai_api_key,base_url=self.openai_api_base)
         return self._client
 
     def _summarize_with_claude(self, prompt: str) -> str:
